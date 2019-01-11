@@ -1,0 +1,520 @@
+27-Nov-2018 21:10:51.398 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsWebXmlPriority]
+27-Nov-2018 21:10:51.836 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-1"]
+27-Nov-2018 21:10:51.894 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:10:51.896 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:10:51.896 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:10:52.614 信息 [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+27-Nov-2018 21:11:01.975 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Nov-2018 21:11:02.592 严重 [localhost-startStop-1] org.apache.jasper.compiler.JDTCompiler$1.findType Compilation error
+ org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:211)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:165)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:113)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1329)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromVariantTypeSignature(LookupEnvironment.java:1385)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeArgumentsFromSignature(LookupEnvironment.java:1172)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1334)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:550)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:630)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:365)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:688)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:667)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:296)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:118)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:168)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2376)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveLeafType(ParameterizedQualifiedTypeReference.java:138)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveType(ParameterizedQualifiedTypeReference.java:132)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.resolveType(ParameterizedQualifiedTypeReference.java:351)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.resolveTypeFor(SourceTypeBinding.java:1374)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.fields(SourceTypeBinding.java:699)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.faultInTypesForFieldsAndMethods(SourceTypeBinding.java:677)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:756)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:431)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:138)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1138)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1027)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5046)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5356)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:02.664 严重 [localhost-startStop-1] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [bug51396] in web application [] threw load() exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [1] in the generated java file: [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test5552654563333413621\work\Tomcat\localhost\ROOT\org\apache\jsp\bug51396_jsp.java]
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:441)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:138)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1138)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1027)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5046)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5356)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:02.668 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-1-8344"]
+27-Nov-2018 21:11:02.744 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-1-8344"]
+27-Nov-2018 21:11:02.794 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:02.815 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-1-8344"]
+27-Nov-2018 21:11:02.847 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-1-8344"]
+27-Nov-2018 21:11:02.860 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test5552654563333413621\logs] could not be completely deleted. The presence of the remaining files may cause problems
+27-Nov-2018 21:11:02.861 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test5552654563333413621] could not be completely deleted. The presence of the remaining files may cause problems
+27-Nov-2018 21:11:02.863 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testBug51445AddServlet]
+27-Nov-2018 21:11:02.868 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-2"]
+27-Nov-2018 21:11:02.869 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:02.869 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:02.870 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:02.884 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-2-8354"]
+27-Nov-2018 21:11:02.915 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-2-8354"]
+27-Nov-2018 21:11:02.966 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:02.970 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-2-8354"]
+27-Nov-2018 21:11:03.018 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-2-8354"]
+27-Nov-2018 21:11:03.026 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsSubclass1]
+27-Nov-2018 21:11:03.028 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-3"]
+27-Nov-2018 21:11:03.030 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:03.030 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:03.030 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:03.041 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-3-8367"]
+27-Nov-2018 21:11:03.052 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-3-8367"]
+27-Nov-2018 21:11:03.102 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:03.105 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-3-8367"]
+27-Nov-2018 21:11:03.154 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-3-8367"]
+27-Nov-2018 21:11:03.161 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsSubclass2]
+27-Nov-2018 21:11:03.163 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-4"]
+27-Nov-2018 21:11:03.164 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:03.165 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:03.165 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:03.174 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-4-8376"]
+27-Nov-2018 21:11:03.187 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-4-8376"]
+27-Nov-2018 21:11:03.237 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:03.239 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-4-8376"]
+27-Nov-2018 21:11:03.241 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-4-8376"]
+27-Nov-2018 21:11:03.248 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsNoWebXmlLoginConfig]
+27-Nov-2018 21:11:03.250 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-5"]
+27-Nov-2018 21:11:03.251 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:03.252 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:03.252 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:03.262 信息 [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+27-Nov-2018 21:11:04.355 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-5-8385"]
+27-Nov-2018 21:11:04.402 严重 [http-nio-127.0.0.1-auto-5-exec-3] org.apache.jasper.compiler.JDTCompiler$1.findType Compilation error
+ org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:211)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:165)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:113)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1329)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromVariantTypeSignature(LookupEnvironment.java:1385)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeArgumentsFromSignature(LookupEnvironment.java:1172)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1334)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:550)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:630)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:365)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:688)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:667)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:296)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:118)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:168)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2376)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveLeafType(ParameterizedQualifiedTypeReference.java:138)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveType(ParameterizedQualifiedTypeReference.java:132)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.resolveType(ParameterizedQualifiedTypeReference.java:351)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.resolveTypeFor(SourceTypeBinding.java:1374)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.fields(SourceTypeBinding.java:699)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.faultInTypesForFieldsAndMethods(SourceTypeBinding.java:677)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:756)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:431)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1550)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1506)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:04.433 严重 [http-nio-127.0.0.1-auto-5-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [1] in the generated java file: [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test1909422593086541876\work\Tomcat\localhost\ROOT\org\apache\jsp\unprotected_jsp.java]
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [1] in the generated java file: [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test1909422593086541876\work\Tomcat\localhost\ROOT\org\apache\jsp\unprotected_jsp.java]
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:441)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1550)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1506)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:04.469 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-5-8385"]
+27-Nov-2018 21:11:04.520 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:04.525 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-5-8385"]
+27-Nov-2018 21:11:04.528 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-5-8385"]
+27-Nov-2018 21:11:04.569 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet01]
+27-Nov-2018 21:11:04.573 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-6"]
+27-Nov-2018 21:11:04.575 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:04.575 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:04.575 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:04.587 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [POST] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:04.588 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-6-8394"]
+27-Nov-2018 21:11:04.608 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-6-8394"]
+27-Nov-2018 21:11:04.658 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:04.662 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-6-8394"]
+27-Nov-2018 21:11:04.711 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-6-8394"]
+27-Nov-2018 21:11:04.718 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet02]
+27-Nov-2018 21:11:04.721 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-7"]
+27-Nov-2018 21:11:04.740 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:04.741 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:04.741 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:04.751 信息 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods Adding security constraints with URL pattern [/] to deny access with the uncovered HTTP methods that are not one of the following [POST]
+27-Nov-2018 21:11:04.753 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-7-8403"]
+27-Nov-2018 21:11:04.763 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-7-8403"]
+27-Nov-2018 21:11:04.813 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:04.816 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-7-8403"]
+27-Nov-2018 21:11:04.824 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-7-8403"]
+27-Nov-2018 21:11:04.833 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet03]
+27-Nov-2018 21:11:04.835 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-8"]
+27-Nov-2018 21:11:04.836 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:04.836 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:04.836 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:04.844 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [POST] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:04.848 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-8-8412"]
+27-Nov-2018 21:11:04.859 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-8-8412"]
+27-Nov-2018 21:11:04.909 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:04.915 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-8-8412"]
+27-Nov-2018 21:11:04.920 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-8-8412"]
+27-Nov-2018 21:11:04.929 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet04]
+27-Nov-2018 21:11:04.932 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-9"]
+27-Nov-2018 21:11:04.933 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:04.933 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:04.933 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:04.942 信息 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods Adding security constraints with URL pattern [/] to deny access with the uncovered HTTP methods that are not one of the following [POST]
+27-Nov-2018 21:11:04.944 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-9-8421"]
+27-Nov-2018 21:11:04.952 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-9-8421"]
+27-Nov-2018 21:11:05.003 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.007 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-9-8421"]
+27-Nov-2018 21:11:05.015 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-9-8421"]
+27-Nov-2018 21:11:05.026 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet05]
+27-Nov-2018 21:11:05.028 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-10"]
+27-Nov-2018 21:11:05.029 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.029 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.029 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.036 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [POST] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:05.037 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-10-8430"]
+27-Nov-2018 21:11:05.044 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-10-8430"]
+27-Nov-2018 21:11:05.095 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.097 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-10-8430"]
+27-Nov-2018 21:11:05.100 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-10-8430"]
+27-Nov-2018 21:11:05.108 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet06]
+27-Nov-2018 21:11:05.110 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-11"]
+27-Nov-2018 21:11:05.111 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.112 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.112 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.121 信息 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods Adding security constraints with URL pattern [/] to deny access with the uncovered HTTP methods that are not one of the following [POST]
+27-Nov-2018 21:11:05.123 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-11-8439"]
+27-Nov-2018 21:11:05.135 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-11-8439"]
+27-Nov-2018 21:11:05.186 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.188 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-11-8439"]
+27-Nov-2018 21:11:05.193 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-11-8439"]
+27-Nov-2018 21:11:05.204 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet07]
+27-Nov-2018 21:11:05.206 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-12"]
+27-Nov-2018 21:11:05.207 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.208 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.209 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.218 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [POST] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:05.220 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-12-8449"]
+27-Nov-2018 21:11:05.230 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-12-8449"]
+27-Nov-2018 21:11:05.281 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.283 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-12-8449"]
+27-Nov-2018 21:11:05.285 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-12-8449"]
+27-Nov-2018 21:11:05.293 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsUncoveredGet08]
+27-Nov-2018 21:11:05.295 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-13"]
+27-Nov-2018 21:11:05.296 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.296 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.296 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.305 信息 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods Adding security constraints with URL pattern [/] to deny access with the uncovered HTTP methods that are not one of the following [POST]
+27-Nov-2018 21:11:05.308 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-13-8458"]
+27-Nov-2018 21:11:05.315 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-13-8458"]
+27-Nov-2018 21:11:05.365 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.367 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-13-8458"]
+27-Nov-2018 21:11:05.418 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-13-8458"]
+27-Nov-2018 21:11:05.426 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsMethods1]
+27-Nov-2018 21:11:05.429 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-14"]
+27-Nov-2018 21:11:05.430 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.430 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.430 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.443 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [GET] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:05.444 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-14-8467"]
+27-Nov-2018 21:11:05.452 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-14-8467"]
+27-Nov-2018 21:11:05.502 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.505 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-14-8467"]
+27-Nov-2018 21:11:05.554 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-14-8467"]
+27-Nov-2018 21:11:05.561 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsMethods2]
+27-Nov-2018 21:11:05.563 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-15"]
+27-Nov-2018 21:11:05.564 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.564 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.564 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.570 严重 [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.SecurityConstraint.findUncoveredHttpMethods For security constraints with URL pattern [/] only the HTTP methods [GET] are covered. All other methods are uncovered.
+27-Nov-2018 21:11:05.572 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-15-8476"]
+27-Nov-2018 21:11:05.581 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-15-8476"]
+27-Nov-2018 21:11:05.631 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:05.638 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-15-8476"]
+27-Nov-2018 21:11:05.652 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-15-8476"]
+27-Nov-2018 21:11:05.668 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsMetaDataPriority]
+27-Nov-2018 21:11:05.697 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-16"]
+27-Nov-2018 21:11:05.698 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:05.699 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:05.699 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:05.713 信息 [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+27-Nov-2018 21:11:07.020 严重 [localhost-startStop-1] org.apache.jasper.compiler.JDTCompiler$1.findType Compilation error
+ org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:211)
+	at org.apache.jasper.compiler.JDTCompiler$1.findType(JDTCompiler.java:165)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:113)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1329)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromVariantTypeSignature(LookupEnvironment.java:1385)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeArgumentsFromSignature(LookupEnvironment.java:1172)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getTypeFromTypeSignature(LookupEnvironment.java:1334)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethod(BinaryTypeBinding.java:550)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.createMethods(BinaryTypeBinding.java:630)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.cachePartsFrom(BinaryTypeBinding.java:365)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:688)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.createBinaryTypeFrom(LookupEnvironment.java:667)
+	at org.eclipse.jdt.internal.compiler.Compiler.accept(Compiler.java:296)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:118)
+	at org.eclipse.jdt.internal.compiler.lookup.UnresolvedReferenceBinding.resolve(UnresolvedReferenceBinding.java:49)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.resolveType(BinaryTypeBinding.java:122)
+	at org.eclipse.jdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:168)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getPackage(Scope.java:2376)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveLeafType(ParameterizedQualifiedTypeReference.java:138)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.internalResolveType(ParameterizedQualifiedTypeReference.java:132)
+	at org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference.resolveType(ParameterizedQualifiedTypeReference.java:351)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.resolveTypeFor(SourceTypeBinding.java:1374)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.fields(SourceTypeBinding.java:699)
+	at org.eclipse.jdt.internal.compiler.lookup.SourceTypeBinding.faultInTypesForFieldsAndMethods(SourceTypeBinding.java:677)
+	at org.eclipse.jdt.internal.compiler.lookup.CompilationUnitScope.faultInTypes(CompilationUnitScope.java:469)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:756)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:431)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:138)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1138)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1027)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5046)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5356)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:07.053 严重 [localhost-startStop-1] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [Bug53574] in web application [/test] threw load() exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [1] in the generated java file: [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test1698912069456601843\work\Tomcat\localhost\test\org\apache\jsp\WEB_002dINF\jsp\bug53574_jsp.java]
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:441)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:138)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1194)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1138)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1027)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5046)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5356)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Nov-2018 21:11:07.067 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-16-8485"]
+27-Nov-2018 21:11:07.077 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-16-8485"]
+27-Nov-2018 21:11:07.127 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:07.130 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-16-8485"]
+27-Nov-2018 21:11:07.133 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-16-8485"]
+27-Nov-2018 21:11:07.145 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testBug51445AddChild]
+27-Nov-2018 21:11:07.147 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-17"]
+27-Nov-2018 21:11:07.148 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:07.148 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:07.148 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:07.155 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-17-8494"]
+27-Nov-2018 21:11:07.169 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-17-8494"]
+27-Nov-2018 21:11:07.219 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:07.221 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-17-8494"]
+27-Nov-2018 21:11:07.223 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-17-8494"]
+27-Nov-2018 21:11:07.230 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsRole1]
+27-Nov-2018 21:11:07.233 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-18"]
+27-Nov-2018 21:11:07.234 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:07.234 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:07.234 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:07.242 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-18-8507"]
+27-Nov-2018 21:11:07.251 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-18-8507"]
+27-Nov-2018 21:11:07.301 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:07.303 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-18-8507"]
+27-Nov-2018 21:11:07.356 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-18-8507"]
+27-Nov-2018 21:11:07.376 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsRole2]
+27-Nov-2018 21:11:07.380 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-19"]
+27-Nov-2018 21:11:07.382 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:11:07.383 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:11:07.383 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:11:07.396 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-19-8516"]
+27-Nov-2018 21:11:07.405 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-19-8516"]
+27-Nov-2018 21:11:07.455 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:11:07.457 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-19-8516"]
+27-Nov-2018 21:11:07.506 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-19-8516"]
+27-Nov-2018 21:11:07.515 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsSimple]
+27-Nov-2018 21:15:34.879 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-20"]
+27-Nov-2018 21:15:34.900 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:15:34.906 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:15:34.909 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:15:34.927 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-20-8538"]
+27-Nov-2018 21:16:00.591 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-20-8538"]
+27-Nov-2018 21:16:00.643 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:16:00.647 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-20-8538"]
+27-Nov-2018 21:16:00.650 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-20-8538"]
+27-Nov-2018 21:16:00.657 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsAddServlet1]
+27-Nov-2018 21:16:00.661 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-21"]
+27-Nov-2018 21:16:00.662 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:16:00.662 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:16:00.662 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:16:00.675 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-21-8547"]
+27-Nov-2018 21:16:00.681 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-21-8547"]
+27-Nov-2018 21:16:00.732 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:16:00.734 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-21-8547"]
+27-Nov-2018 21:16:00.736 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-21-8547"]
+27-Nov-2018 21:16:00.743 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsAddServlet2]
+27-Nov-2018 21:16:00.745 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-22"]
+27-Nov-2018 21:16:00.746 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:16:00.746 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:16:00.747 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:16:00.753 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-22-8556"]
+27-Nov-2018 21:16:00.764 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-22-8556"]
+27-Nov-2018 21:16:00.815 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:16:00.817 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-22-8556"]
+27-Nov-2018 21:16:00.819 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-22-8556"]
+27-Nov-2018 21:16:00.826 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsNoWebXmlConstraints]
+27-Nov-2018 21:16:00.828 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-23"]
+27-Nov-2018 21:16:00.829 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:16:00.829 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:16:00.829 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:16:00.840 信息 [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.getDefaultWebXmlFragment No global web.xml found
+27-Nov-2018 21:16:01.874 警告 [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.validateSecurityRoles Security role name testRole used in an <auth-constraint> without being defined in a <security-role>
+27-Nov-2018 21:16:01.886 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-23-8565"]
+27-Nov-2018 21:16:01.897 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-23-8565"]
+27-Nov-2018 21:16:01.947 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:16:01.955 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-23-8565"]
+27-Nov-2018 21:16:01.963 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-23-8565"]

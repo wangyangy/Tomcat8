@@ -1,0 +1,11 @@
+27-Nov-2018 15:56:18.168 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testAddHost]
+27-Nov-2018 15:56:19.541 严重 [main] org.apache.catalina.mapper.Mapper.addHost Duplicate Host [iowejoiejfoiew]. The name is already used by Host [iowejoiejfoiew]. This Host will be ignored.
+27-Nov-2018 15:56:19.542 严重 [main] org.apache.catalina.mapper.Mapper.addHostAliasImpl Duplicate host Alias [qwigqwiwoih] in Host [iowejoiejfoiew]. The name is already used by Host [qwigqwiwoih]. This Alias will be ignored.
+27-Nov-2018 15:56:19.542 严重 [main] org.apache.catalina.mapper.Mapper.addHostAliasImpl Duplicate host Alias [iowejoiejfoiew_alias] in Host [sjbjdvwsbvhrb]. The name is already used by Host [iowejoiejfoiew]. This Alias will be ignored.
+27-Nov-2018 15:56:19.597 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test2211495494009919458\logs] could not be completely deleted. The presence of the remaining files may cause problems
+27-Nov-2018 15:56:19.599 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test2211495494009919458] could not be completely deleted. The presence of the remaining files may cause problems
+27-Nov-2018 15:56:19.605 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testMap]
+27-Nov-2018 15:56:19.619 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testAddRemoveContextVersion]
+27-Nov-2018 15:56:19.623 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testRemoveHost]
+27-Nov-2018 15:56:19.627 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testReloadContextVersion]
+27-Nov-2018 15:56:19.630 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testContextListConcurrencyBug56653]

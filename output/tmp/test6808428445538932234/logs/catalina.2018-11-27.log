@@ -1,0 +1,12 @@
+27-Nov-2018 21:16:13.242 信息 [main] org.apache.catalina.startup.LoggingBaseTest.setUp Starting test case [testSecurityAnnotationsSimple]
+27-Nov-2018 21:16:13.513 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-auto-1"]
+27-Nov-2018 21:16:13.562 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+27-Nov-2018 21:16:13.564 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service Tomcat
+27-Nov-2018 21:16:13.564 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+27-Nov-2018 21:16:13.718 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-auto-1-8576"]
+27-Nov-2018 21:16:13.783 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-auto-1-8576"]
+27-Nov-2018 21:16:13.834 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Tomcat
+27-Nov-2018 21:16:13.841 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-auto-1-8576"]
+27-Nov-2018 21:16:13.886 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-auto-1-8576"]
+27-Nov-2018 21:16:13.907 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test6808428445538932234\logs] could not be completely deleted. The presence of the remaining files may cause problems
+27-Nov-2018 21:16:13.909 严重 [main] org.apache.catalina.startup.ExpandWar.deleteDir [G:\ruanjian\develop\workspace_oxgen\Tomcat8.0.50\output\tmp\test6808428445538932234] could not be completely deleted. The presence of the remaining files may cause problems
